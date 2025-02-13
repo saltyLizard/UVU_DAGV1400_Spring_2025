@@ -9,13 +9,13 @@ public class CharacterAnimationScript : MonoBehaviour
 
     private void HandleAnimations()
     {
-        //Running?
+        //Running
         if (Input.GetAxis("Horizontal") != 0)
         {
             animator.SetTrigger("RunTrig");
         }
         
-        //Jumping?
+        //Jumping
         if (Input.GetButtonDown("Jump"))
         {
             animator.SetTrigger("JumpTrig");
