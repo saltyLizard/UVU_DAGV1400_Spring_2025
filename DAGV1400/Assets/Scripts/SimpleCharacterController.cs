@@ -7,12 +7,15 @@ using UnityEngine;
 public class SimpleCharacterController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 8f;
+    public float jumpForce = 2f;
     public float gravity = -9.81f;
     
     private CharacterController controller;
     private Transform thisTransform;
     private Vector3 velocity;
+    
+    bool isGrounded = false;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,24 @@ public class SimpleCharacterController : MonoBehaviour
         KeepCharacterOnXAxis();
         
     }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the trigger collided with a game object tagged as "Ground"
+        if (other.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        // Check if the trigger collided with a game object tagged as "Ground"
+        if (other.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
+    
     private void MoveCharacter()
     {
         //Horizontal movement
@@ -37,16 +58,17 @@ public class SimpleCharacterController : MonoBehaviour
         controller.Move(move);
         
         //Jumping
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (Input.GetButtonDown("Jump")) //will not work with: && isGrounded == true
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
+            isGrounded = false;
         }
         
     }
     
     private void ApplyGravity()
     {
-        if (!controller.isGrounded) //gravity when not on ground
+        if (isGrounded == false) //gravity when not on ground
         {
             velocity.y += gravity * Time.deltaTime;
         }

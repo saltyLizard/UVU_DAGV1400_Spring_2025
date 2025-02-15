@@ -6,19 +6,19 @@ public class CharacterAnimationScript : MonoBehaviour
 {
     
     private Animator animator;
-
+    
     private void HandleAnimations()
     {
         //Running
         if (Input.GetAxis("Horizontal") != 0)
-        {
+        { 
             animator.SetTrigger("RunTrig");
         }
         
         //Jumping
         if (Input.GetButtonDown("Jump"))
         {
-            animator.SetTrigger("JumpTrig");
+                animator.SetTrigger("JumpTrig");
         }
         
         //Wall Jump!
