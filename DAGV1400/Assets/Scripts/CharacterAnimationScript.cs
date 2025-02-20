@@ -33,12 +33,13 @@ public class CharacterAnimationScript : MonoBehaviour
             animator.SetTrigger("FallTrig");
         }
         
-        //Hit animation test
+        /*Hit animation test
         if (Input.GetKeyDown(KeyCode.S))
         {
             animator.SetTrigger("HitTrig");
         }
-       
+       */
+        
         //Double Jump, probably will change
         if (Input.GetKeyDown(KeyCode.V))
         {
