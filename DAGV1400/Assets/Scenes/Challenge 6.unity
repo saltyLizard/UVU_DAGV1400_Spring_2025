@@ -1228,36 +1228,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 173242599}
+    - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
+      propertyPath: triggerName
+      value: HitTrig
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9100000, guid: d39bf6d55946d61439da62c4d7d7601c, type: 2}
+      objectReference: {fileID: 173242599}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: SetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: 
+      value: UnityEngine.Animator, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
+      value: HitTrig
       objectReference: {fileID: 0}
     - target: {fileID: 6696474834531612366, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
