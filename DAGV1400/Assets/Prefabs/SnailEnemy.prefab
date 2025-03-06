@@ -144,7 +144,7 @@ MonoBehaviour:
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5543929932097140153, guid: 29af948d015aa8342826fb5e0bbd9c51, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -168,7 +168,7 @@ MonoBehaviour:
           m_StringArgument: HitTrig
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 581047463317239044, guid: 8c2d2ffee0b935c4a923a231ffd461d1, type: 3}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SimpleImageBehavior, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
@@ -178,5 +178,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: -0.1
           m_StringArgument: HitTrig
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7483556129074022840}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -0.1
+          m_StringArgument: TouchTrig
           m_BoolArgument: 0
         m_CallState: 2
