@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-
+[RequireComponent(typeof(AudioSource))]
 public class SimpleCharacterController : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -16,12 +16,14 @@ public class SimpleCharacterController : MonoBehaviour
     
     private bool isJumping = false;
     
+    private AudioSource audioSource;
     
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
         thisTransform = transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class SimpleCharacterController : MonoBehaviour
             velocity.x = 0f;
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             isJumping = true;
+            audioSource.Play();
         }
         
         isJumping = false;
