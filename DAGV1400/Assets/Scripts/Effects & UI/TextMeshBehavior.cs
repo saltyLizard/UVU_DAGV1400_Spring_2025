@@ -26,7 +26,7 @@ public class TextMeshBehavior : MonoBehaviour
 
     public void UpdateWithIntData()
     {
-        textObj.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
+        textObj.text = dataObj.currentValue.ToString(CultureInfo.InvariantCulture);
     }
     
     

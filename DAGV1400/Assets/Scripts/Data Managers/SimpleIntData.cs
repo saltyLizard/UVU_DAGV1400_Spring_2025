@@ -5,16 +5,24 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Single Variables/SimpleIntData")]
 public class SimpleIntData : ScriptableObject
 {
-    public int value;
+    public int currentValue;
+    public int startValue;
+    
+    public void ResetValue()
+    {
+        currentValue = startValue;
+    }
     
     public void UpdateValue(int amount)
     {
-        value += amount;
-        Debug.Log("Int Data changed by " + value);
+        currentValue += amount;
+        Debug.Log("Int Data changed by " + currentValue);
     }
 
     public void SetValue(int amount)
     {
-        value = amount;
+        currentValue = amount;
     }
+    
+    
 }

@@ -40,8 +40,8 @@ public class SimpleImageBehavior : MonoBehaviour
             return;
         }
 
-        Debug.Log(gameObject.name + " updating fillAmount to " + dataObj.value);
-        imageObj.fillAmount = dataObj.value;
+        Debug.Log(gameObject.name + " updating fillAmount to " + dataObj.currentValue);
+        imageObj.fillAmount = dataObj.currentValue;
         
         
 

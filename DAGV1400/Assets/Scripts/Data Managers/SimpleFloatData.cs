@@ -1,20 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+
 [CreateAssetMenu(menuName = "Single Variables/SimpleFloatData")]
 public class SimpleFloatData : ScriptableObject
 {
-    public float value;
-    
+    public float currentValue;
+    public float startValue;
+
+    public void ResetValue()
+    {
+        currentValue = startValue;
+    }
+
     public void UpdateValue(float amount)
     {
-        value += amount;
+        currentValue += amount;
     }
 
     public void SetValue(float amount)
     {
-        value = amount;
+        currentValue = amount;
     }
-    
 }
