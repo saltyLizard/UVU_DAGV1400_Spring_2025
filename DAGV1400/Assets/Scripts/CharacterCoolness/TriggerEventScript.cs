@@ -10,12 +10,16 @@ public class TriggerEventScript : MonoBehaviour
 
    private void OnTriggerEnter(Collider other)
    {
-      triggerEvent.Invoke();
-      Debug.Log("Player interacted with object");
-      if (other.gameObject.tag == "Player" && gameObject.tag == "Orange")
+      if (other.gameObject.tag == "Player")
       {
-         Destroy(gameObject.GetComponent<Collider>());
+         triggerEvent.Invoke();
+         Debug.Log("Player interacted with object");
+         if (other.gameObject.tag == "Player" && gameObject.tag == "Orange")
+         {
+            Destroy(gameObject.GetComponent<Collider>());
+         }
       }
+      
 
    }
 }

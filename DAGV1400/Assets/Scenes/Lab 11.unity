@@ -5331,7 +5331,7 @@ Transform:
   m_GameObject: {fileID: 168959293}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 1.47, z: 0}
+  m_LocalPosition: {x: 14.132437, y: 1.47, z: 0}
   m_LocalScale: {x: 2.1667, y: 2.1667, z: 2.1667}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5820,6 +5820,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4931981107585820367, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
   m_PrefabInstance: {fileID: 3399253567773396297}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &389689907 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 487414547602002683, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+  m_PrefabInstance: {fileID: 3399253567773396297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &389689910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5844,19 +5849,31 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: HitTrig
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
+      - m_Target: {fileID: 11400000, guid: 0ce145db4edc03c43a542d2a6528944a, type: 2}
+        m_TargetAssemblyTypeName: SimpleFloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_FloatArgument: -0.5
+          m_StringArgument: HitTrig
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 725382751}
+        m_TargetAssemblyTypeName: SimpleImageBehavior, Assembly-CSharp
+        m_MethodName: UpdateWithFloatData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -0.1
+          m_StringArgument: HitTrig
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &471619758
@@ -8924,7 +8941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1110411302521051923, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.0775633
+      value: 9.73
       objectReference: {fileID: 0}
     - target: {fileID: 1110411302521051923, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8965,6 +8982,38 @@ PrefabInstance:
     - target: {fileID: 4931981107585820367, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
       propertyPath: m_Name
       value: FireHazard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 389689907}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: No Burny
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447668048996848708, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
+      propertyPath: matchEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
