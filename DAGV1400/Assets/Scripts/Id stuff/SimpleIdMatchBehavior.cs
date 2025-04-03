@@ -15,14 +15,12 @@ public class SimpleIdMatchBehavior : MonoBehaviour
 
         if (otherID == null)
         {
-            Debug.Log("Ignored collision with: " + other.name);
             return;
         }
 
         if (otherID.id == id)
         {
             matchEvent.Invoke();
-            Debug.Log("Matched ID: " + id);
         
             // Destroy the key after matching
             Destroy(other.gameObject);
@@ -30,7 +28,6 @@ public class SimpleIdMatchBehavior : MonoBehaviour
         else
         {
             noMatchEvent.Invoke();
-            Debug.Log("No Match: " + id);
         }
     }
 

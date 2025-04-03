@@ -39,12 +39,9 @@ public class SimpleImageBehavior : MonoBehaviour
             Debug.LogError(gameObject.name + " dataObj is NULL!");
             return;
         }
-
-        Debug.Log(gameObject.name + " updating fillAmount to " + dataObj.currentValue);
+        
         imageObj.fillAmount = dataObj.currentValue;
         
-        
-
     }
      
 }

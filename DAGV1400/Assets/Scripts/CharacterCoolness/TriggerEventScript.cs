@@ -13,7 +13,7 @@ public class TriggerEventScript : MonoBehaviour
       if (other.gameObject.tag == "Player")
       {
          triggerEvent.Invoke();
-         Debug.Log("Player interacted with object");
+         
          if (other.gameObject.tag == "Player" && gameObject.tag == "Orange")
          {
             Destroy(gameObject.GetComponent<Collider>());

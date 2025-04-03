@@ -13,15 +13,16 @@ public class SoundEffectController : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    {   
         if (other.tag == "Player")
-        {
+        { 
             audioSource.Play();
         }
         else if (gameObject.tag == "Player")
         {
             audioSource.Play();
         }
+        
 
     }
     
