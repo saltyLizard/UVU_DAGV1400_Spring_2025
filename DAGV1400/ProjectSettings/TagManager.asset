@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Orange
   - Shield
+  - Snail
   layers:
   - Default
   - TransparentFX

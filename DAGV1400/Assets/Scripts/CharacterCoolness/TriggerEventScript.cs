@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 
 
 public class TriggerEventScript : MonoBehaviour
 {
    public UnityEvent triggerEvent;
+
 
    private void OnTriggerEnter(Collider other)
    {
@@ -20,6 +22,7 @@ public class TriggerEventScript : MonoBehaviour
             Destroy(gameObject.GetComponent<Collider>());
          }
       }
+      
       
 
    }
