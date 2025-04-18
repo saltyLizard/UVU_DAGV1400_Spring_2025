@@ -372,10 +372,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 108663602}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.88
@@ -1548,6 +1544,8 @@ GameObject:
   m_Component:
   - component: {fileID: 154531617}
   - component: {fileID: 154531616}
+  - component: {fileID: 154531618}
+  - component: {fileID: 154531619}
   m_Layer: 0
   m_Name: DataReseter (akaGod)
   m_TagString: Untagged
@@ -1587,6 +1585,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154531618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154531615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2253cf8be7cd9de48b508443e27085dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataObj: {fileID: 11400000, guid: 0ce145db4edc03c43a542d2a6528944a, type: 2}
+--- !u!114 &154531619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154531615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1758088a4b2cd438f7016a822fa529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataobj: {fileID: 11400000, guid: 0ce145db4edc03c43a542d2a6528944a, type: 2}
 --- !u!4 &159122652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1110411302521051923, guid: 1de09c50f9c7a944ba3fb5272b88e6fd, type: 3}
@@ -7171,10 +7195,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 2062718554}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.77
@@ -8361,10 +8381,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 544849718}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.67
@@ -13801,10 +13817,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1715921281}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.04
@@ -20176,10 +20188,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1715921281}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.26
@@ -24046,10 +24054,6 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 108663602}
-    - target: {fileID: 6323534133512481977, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
-      propertyPath: m_BaseOffset
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 6663063326491234556, guid: e830605ea3317384eb3fc87a7b82a1b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.16
