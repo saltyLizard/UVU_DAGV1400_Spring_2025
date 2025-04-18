@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 [RequireComponent(typeof(AudioSource))]
@@ -32,6 +33,7 @@ public class SimpleCharacterController : MonoBehaviour
         MoveCharacter();
         ApplyGravity();
         KeepCharacterOnXAxis();
+        GameQuit();
         
         //Jumping
         if (Input.GetButtonDown("Jump") && controller.isGrounded)
@@ -43,8 +45,15 @@ public class SimpleCharacterController : MonoBehaviour
         }
         
         isJumping = false;
-
         
+    }
+
+    private void GameQuit()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
     
     private void MoveCharacter()

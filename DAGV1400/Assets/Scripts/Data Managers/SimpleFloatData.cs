@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "Single Variables/SimpleFloatData")]
 public class SimpleFloatData : ScriptableObject
@@ -22,4 +23,6 @@ public class SimpleFloatData : ScriptableObject
     {
         currentValue = amount;
     }
+    
+    
 }

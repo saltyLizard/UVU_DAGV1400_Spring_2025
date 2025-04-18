@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Image))]
 public class SimpleImageBehavior : MonoBehaviour
@@ -43,5 +44,6 @@ public class SimpleImageBehavior : MonoBehaviour
         imageObj.fillAmount = dataObj.currentValue;
         
     }
+    
      
 }
