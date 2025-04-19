@@ -9,7 +9,7 @@ public class SnailDeathBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (shieldStuff.isShieldRunning == true)
+        if (shieldStuff.isShieldRunning == true && other.CompareTag("Player") == true)
         {
             //Debug.Log("Player with active shield touched " + gameObject.name);
             
